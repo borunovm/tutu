@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+/*reset css*/
+*{
+	margin:0;
+	padding:0;
+}
+
+img{
+	border:none;
+}
+
+/* для всех нормальных браузеров*/
+::-webkit-input-placeholder  {color:#0088c8; font-size:14px; font-family:VWBlack;}
+:-moz-placeholder {color:#0088c8; font-size:14px; font-family:VWBlack;}
+:-ms-input-placeholder {color:#0088c8; font-size:14px; font-family:VWBlack;}
+
+a{
+	text-decoration:none;
+}
+
+#wrapper a,
+#footer a{
+	transition:all 0.3s linear;
+	-webkit-transition:all 0.3s linear;
+	-moz-transition:all 0.3s linear;
+	-o-transition:all 0.3s linear;
+}
+
+body{
+	font-family: Arial, sans-serif;
+	line-height:1;
+	font-size:100%;
+	background:#fff;
+}
+
+html, body{
+	width:100%;
+	height: 100%;	
+	min-width:1024px;
+}
+
+#wrapper{
+	margin:0 auto;
+	position:relative;
+	min-height:100%;
+	height: auto !important;
+}
+
+.restriction{
+	width:1024px;
+	margin:0 auto;
+	position:relative;
+}
+
+
+/*header*/
+#header{
+	width:100%;
+	margin:40px 0 60px;
+	height:65px;
+}
+
+.header-menu{
+	width:782px;
+	height:65px;
+	line-height:65px;
+	float:right;
+	text-align:center;
+	border:1px solid #eee;
+	box-shadow:0 1px 2px 0 rgba(0,0,0,0.2);
+	border-radius:15px;
+}
+
+.menu-item{
+	color:#000;
+	font-size:14px;
+	font-family:Arial;
+	text-decoration:underline;
+	margin:0 15px;
+}
+
+.menu-item_fiolet{
+	color:#4900a4;
+}
+
+.menu-item_green{
+	color:green;
+}
+
+.menu-item_blue{
+	color:#0e73d9;	
+}
+
+.menu-item_orange{
+	color:orange;
+}
+
+.menu-item_brown{
+	color:brown;
+}
+
+.menu-item_red{
+	color:red;
+}
+
+
+
+/*middle*/		
+#middle{
+	width:100%;
+	padding-bottom:48px;
+}
+
+.left-column{
+	width:200px;
+	margin-right:40px;
+	float:left;
+}
+
+.text{
+	color:#000;
+	font-size:12px;
+	font-family:Arial;
+	line-height:16px;
+}
+
+.text p + p{
+	margin-top:50px;
+}
+
+.right-column{
+	float:left;
+}
+
+.registration{
+	overflow:hidden;
+	width:100%;
+}
+
+.header{
+	overflow:hidden;
+}
+
+.header-title{
+	color:#000;
+	font-size:26px;
+	font-family:Arial;
+	float:left;
+}
+
+.step{
+	list-style:none;
+	float:left;
+	overflow:hidden;
+	border-radius:5px;
+}
+
+.step-item{
+	width:90px;
+	height:15px;
+	line-height:15px;
+	float:left;
+	color:#7b7b7b;
+	font-size:12px;
+	font-family:Arial;
+	font-style:italic;
+	text-align:center;
+	border-right:1px solid #fff;
+	
+	background:#f6f6f6;
+}
+
+.step-item_total{
+	color:#fff;
+	background: #2f8814;
+	background: -moz-linear-gradient(top,  #2f8814 0%, #3bad19 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2f8814), color-stop(100%,#3bad19));
+	background: -webkit-linear-gradient(top,  #2f8814 0%,#3bad19 100%);
+	background: -o-linear-gradient(top,  #2f8814 0%,#3bad19 100%);
+	background: -ms-linear-gradient(top,  #2f8814 0%,#3bad19 100%);
+	background: linear-gradient(to bottom,  #2f8814 0%,#3bad19 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f8814', endColorstr='#3bad19',GradientType=0 );
+}
+
+.step-item_active{
+	color:#fff;
+	background: #94c404;
+	background: -moz-linear-gradient(top,  #94c404 0%, #a4d807 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#94c404), color-stop(100%,#a4d807));
+	background: -webkit-linear-gradient(top,  #94c404 0%,#a4d807 100%);
+	background: -o-linear-gradient(top,  #94c404 0%,#a4d807 100%);
+	background: -ms-linear-gradient(top,  #94c404 0%,#a4d807 100%);
+	background: linear-gradient(to bottom,  #94c404 0%,#a4d807 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94c404', endColorstr='#a4d807',GradientType=0 );
+}
+
+/*footer*/
+#footer{
+	width:100%;
+	position:absolute;
+	bottom:0px;
+}
+
+
+/*ПК с разрешением не меньше чем 1600px*/
+@media (min-width:1600px) {
+	
+}
+
+
+/*ПК с разрешением не меньше чем 1024px*/
+@media (max-width:1599px) and (min-width:1024px){
+	
+}
+
+/*Разрешение вертикального ipad*/
+@media (max-width:1023px) and (min-width:768px){
+/* .restriction{
+	width:100%;
+	max-width:1024px;
+} */
+}
+
+/*разрешение экрана горизонтального iphone*/
+@media (max-width:767px) and (min-width:480px){
+/* .restriction{
+	width:100%;
+	max-width:767px;
+} */
+}
+
+/*разрешение экрана вертикального iphone*/
+@media (max-width:479px){
+/* .restriction{
+	width:100%;
+	max-width:479px;
+} */
+}
